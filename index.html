@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Песочница для рисования</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+        }
+
+        #canvas-container {
+            position: relative;
+        }
+
+        canvas {
+            border: 1px solid black;
+            cursor: crosshair;
+        }
+
+        input[type="file"] {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div id="canvas-container">
+        <input type="file" id="upload-image" accept="image/*">
+        <canvas id="drawingCanvas" width="800" height="600"></canvas>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
